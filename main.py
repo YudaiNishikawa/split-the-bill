@@ -48,4 +48,5 @@ def main(page:ft.Page):
         result_text
     )
 
-ft.run(main, view=None, port=8551, host="0.0.0.0")# port=0 は空いているポートを自動で使う、host="0.0.0.0" はネットワーク公開を許可する設定です
+if __name__ == "__main__":
+    ft.app(target=main)# port=0 は空いているポートを自動で使う、host="0.0.0.0" はネットワーク公開を許可する設定です
